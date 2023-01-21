@@ -16,10 +16,10 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
 app.post('/answer', async (req, res) => {
   const {question, age} = req.body;
-  console.log(question)
-  console.log(age)
+
 
   
 
