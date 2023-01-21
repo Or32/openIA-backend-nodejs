@@ -13,6 +13,9 @@ app.use(express.json());
 var cors = require('cors');
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 app.post('/answer', async (req, res) => {
   const {question, age} = req.body;
   console.log(question)
