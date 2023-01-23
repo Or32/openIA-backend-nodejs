@@ -14,7 +14,7 @@ var cors = require('cors');
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send(process.env.OPENAI_API_KEY)
 })
 
 app.post('/answer', async (req, res) => {
